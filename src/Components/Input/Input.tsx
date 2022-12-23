@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button';
 import stylesInput from './styles.module.css';
 
 
@@ -11,9 +12,7 @@ export function Input() {
                 placeholder="Adicione uma nova tarefa" 
                 className={stylesInput.Input} 
             />
-            <button className={stylesInput.Button}>
-                Criar
-            </button>
+            <Button />
        </div> 
 
         

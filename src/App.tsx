@@ -12,12 +12,9 @@ export function App() {
           </nav>
           <div>
             <section>
-              {/* Input */}
+              {/* Input para adicionar novas tarefas */}
               <div>
                 <Input />
-              </div>
-              <div>
-                {/* // Botão Criar */}
               </div>
             </section>
             <div>
