@@ -1,6 +1,8 @@
 import styles from './global.module.css';
 import logo from './assets/logo.svg';
 import { Input } from './Components/Input/Input';
+import { ToDoItem } from './Components/TodoItem/ToDoItem';
+
 export function App() {
 
 
@@ -10,15 +12,18 @@ export function App() {
           <nav className={styles.navMenu}>
               <img src={logo} className={styles.logo}/>
           </nav>
-          <div>
+          <div className={styles.containerToDo}>
             <section>
-              {/* Input para adicionar novas tarefas */}
+              {/*  Adicionar novas tarefas */}
               <div>
                 <Input />
               </div>
             </section>
             <div>
-              {/* // Renderizar as novas tarefas. */}
+              {/* // Renderizar as novas tarefas adicionadas no Input. */}
+              <ToDoItem />
+
+              
             </div>
           </div>
         </main>
